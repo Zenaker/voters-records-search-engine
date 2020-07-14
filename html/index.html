@@ -1,0 +1,45 @@
+<script src="https://kit.fontawesome.com/815ce3e5d7.js" crossorigin="anonymous"></script>
+
+<center>
+<header>
+<form method="post">
+<h1 class="mt-5 pt-3"> Voters Public Records Search Engine</h1>
+
+<b>if you voted and live in either of these states: Arkansas, Colorado, Connecticut, Delaware, Michigan, Ohio, Oklahoma, Rhode Island, Florida<br>your information is probably in the records</b><br><br>
+<b> birthdate format: instead of "1999/01/01" put "19990101"</b>
+
+<table>
+<tr>
+
+<td bgcolor="lightgreen">
+name or last name: (required)<br>
+<input type="text" name="keyword" maxlength = "25"></td>
+
+<td bgcolor="lightblue">Birth date: (required)<br>
+<input type="text" name="birthdate" maxlength = "8"></td>
+<td><button class="fa fa-search fa-1x" type="submit" id="button"> Search</button></td></tr></table>
+</form>
+</header>
+</center>
+<body>
+    <br>
+        <div id="content">
+            {% if error is sameas true %}
+                <b style="color:red">please input a name and birthdate</b>
+            {% endif %}
+            {% if (results|length > 0) and (query is defined) %}
+                {% for result in results %}
+                    <li><code>{{result}}</code></li>
+                {% endfor %}
+            {% elif (results|length == 0) and (query is defined) %}
+                <b style="color:red">No voter was found with that name or last name</b>
+            {% endif %}
+        </div>
+    </br>
+</body>
+
+<script>
+    document.getElementById('button').onclick = function() {
+        document.getElementById('content').innerHTML = '<center><img src="https://pixelpapa.com/wp-content/uploads/2018/11/26.gif"></center>';
+    }
+</script>
