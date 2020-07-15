@@ -4,6 +4,20 @@
 # Preview
 ![preview](https://imgur.com/sosT2S2.png)
 
+# Just so you know
+voters records in the following states:
+- Arkansas
+- Colorado
+- Connecticut
+- Delaware
+- Michigan
+- Ohio
+- Oklahoma
+- Rhode Island
+- Florida
+
+are ALL available to the public by law. This search engine helps you find someone in the voting records of the following states 
+
 # Set up
 
 - clone repository with `git clone https://github.com/Zenaker/voters-records-search-engine.git`
