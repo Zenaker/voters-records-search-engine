@@ -22,6 +22,9 @@ are ALL available to the public by law. This search engine helps you find someon
 - install requirements `pip3 install -r requirements.txt`
 - start web server `python3 server.py`
 
+# Sources
+[Access To and Use Of Voter Registration Lists](https://www.ncsl.org/research/elections-and-campaigns/access-to-and-use-of-voter-registration-lists.aspx)
+
 # Donations
 
 BTC Address: 3D1FXKMMH46iDNYwn8u7bScrPfbu4ekfDc
