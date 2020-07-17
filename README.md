@@ -14,7 +14,7 @@ voters records in the following states:
 - Rhode Island
 - Florida
 
-are ALL available to the public by law. This search engine helps you find someone in the voting records of the following states 
+are ALL available to the public by law. This search engine helps you find someone in the voting records 
 
 # Set up
 
